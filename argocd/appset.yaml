@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   generators:
-  - git:
-      repoURL: https://github.com/hiddeco/kargo-advanced.git
-      revision: HEAD
-      directories:
-      - path: env/*
+    - git:
+        repoURL: https://github.com/hiddeco/kargo-advanced.git
+        revision: HEAD
+        directories:
+          - path: env/*
   template:
     metadata:
       name: guestbook-{{path.basename}}
@@ -19,7 +19,7 @@ spec:
       destination:
         namespace: guestbook-{{path.basename}}
         # Replace name with the cluster name:
-        name: demo
+        name: in-cluster
       project: guestbook
       source:
         path: app # default render path

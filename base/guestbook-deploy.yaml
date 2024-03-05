@@ -14,11 +14,11 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: ghcr.io/hiddeco/guestbook:latest
-        name: guestbook
-        ports:
-        - name: http
-          containerPort: 3000
-        env:
-        - name: FOO
-          value: bar
+        - image: ghcr.io/hiddeco/guestbook:latest
+          name: guestbook
+          ports:
+            - name: http
+              containerPort: 80
+          env:
+            - name: FOO
+              value: bar
