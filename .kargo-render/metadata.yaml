@@ -1,3 +1,3 @@
 imageSubstitutions:
-- ghcr.io/hiddeco/guestbook:v0.0.2
+- ghcr.io/hiddeco/guestbook:v0.0.3
 sourceCommit: 98f839a7f0a8837e20d9687c5bf73771c5449639
